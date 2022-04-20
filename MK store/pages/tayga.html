@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../jquery/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/modal.js"></script>
+    <title>M & K</title>
+</head>
+<body>
+    <div class="wrapper overflow-hidden">
+        <header>
+            <div class="header-menu">
+                <div class="container-md container-fluid d-flex justify-content-md-end justify-content-between py-2" style="color: white;">
+                    <div class="header-phone">
+                        <a href="tel:0123-456-789" class="d-flex align-items-center text-white" style="cursor: pointer;">
+                            <i class="fs-5 fas fa-phone-square-alt"></i>
+                            <p class="m-0 fs-6">0123-456-789</p>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center gap-5 ps-md-5">
+                        <div>
+                            <i class="fs-5 far fa-heart header-heart" style="cursor: pointer;"></i>
+                        </div>
+                        <div>
+                            <i class="fs-5 fas fa-user-circle" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#myModalDk"></i>
+                        </div>
+                        <div class="header-cart">
+                            <i class="fs-5 fas fa-shopping-cart" style="cursor: pointer;"></i>
+
+                            <div class="header-cart-list">
+                                <img src="../imgs/empty-cart.webp" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    chưa có sản phẩm
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav"> 
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-md container-fluid">
+                      <a class="navbar-brand" href="../index.html">
+                          <img src="../imgs/logo4.png" style="width: 144px; height:61px;">
+                      </a>
+                      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav gap-xl-4 gap-sm-2 gap-0 me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline ps-xl-0 px-0 mx-3" style="color: black;font-weight: 700;" href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline ps-xl-0 px-0 mx-3" style="color: black;font-weight: 700;" href="../pages/xeso.html">XE SỐ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline nav-link-active ps-xl-0 px-0 mx-3" style="color: black;font-weight: 700;" href="../pages/tayga.html">TAY GA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline ps-xl-0 px-0 mx-3" style="color: black;font-weight: 700;" href="../pages/moto.html">MOTO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-link-underline ps-xl-0 px-0 mx-3" style="color: black;font-weight: 700;" href="../pages/taycon.html">TAY CÔN</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex align-items-center px-4 py-2 mx-2" style="border: 1px solid black; border-radius: 2rem;">
+                            <input class="form-control border-0 p-0" type="text" placeholder="Search ..." aria-label="Search">
+                            <i class="fas fa-search"></i>
+                        </form>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+
+        <main class="pt-md-5 py-4">
+            <div class="container-md container-fluid">
+                <div>
+                    <div>
+                        <h2 class="d-sm-inline d-flex justify-content-center main-title">TAY GA</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga1.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">Vision</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">30.230.182 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga2.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">Vision cas</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">34.942.909 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga3.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">Sh Mode 125cc</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">54.186.545 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga4.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">LEAD 125cc</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">39.066.545 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga5.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">SH350i</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">148.990.000 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga6.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">Air Blade 125/150</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">41.815.637 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga7.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">SH125i/150i</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;"> 71.957.455 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 gy-4">
+                        <div class="pt-5 p-4 position-relative main-item">
+                            <i class="fa-solid fa-heart main-item-icon position-absolute fs-5"></i>
+                            <div class="d-flex justify-content-center main-item-img">
+                                <img src="../imgs/tayga/tayga8.png">
+                            </div>
+                            <div class="text-center">
+                                <h6 class="m-0 pb-2">Air Blade 125/150</h6>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p class="m-0 text-danger" style="font-weight: 700;">41.324.727 VND</p>
+                                <p class="m-0 main-item-buy">chọn mua</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="p-5">
+            <div class="container-md container-fluid">
+                <div class="row">
+                    <div class="col col-lg-3 col-md-6">
+                        <ul class="footer-list p-0">
+                            <li class="footer-list-item"><p class="fs-4">ABOUT US</p></li>
+                            <li class="footer-list-item"><a href="#">Our Mission</a></li>
+                            <li class="footer-list-item"><a href="#">Authenticity</a></li>
+                            <li class="footer-list-item"><a href="#">Our product</a></li>
+                            <li class="footer-list-item"><a href="#">Locations</a></li>
+                            <li class="footer-list-item"><a href="#">Uacoming</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-lg-3 col-md-6">
+                        <ul class="footer-list p-0">
+                            <li class="footer-list-item"><p class="fs-4">SUPPORT</p></li>
+                            <li class="footer-list-item"><a href="#">Track Your Order</a></li>
+                            <li class="footer-list-item"><a href="#">Delivery & Returns</a></li>
+                            <li class="footer-list-item"><a href="#">FAQ</a></li>
+                            <li class="footer-list-item"><a href="#">Information Security</a></li>
+                            <li class="footer-list-item"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-lg-3 col-md-6">
+                        <ul class="footer-list p-0">
+                            <li class="footer-list-item"><p class="fs-4">FOLLOW US</p></li>
+                            <li class="footer-list-item d-flex gap-4">
+                                <a href="#"><i class="fab fa-instagram fs-2" style="cursor: pointer;"></i></a>
+                                <a href="#"><i class="fab fa-facebook fs-2" style="cursor: pointer;"></i></a>
+                                <a href="#"><i class="fab fa-twitter fs-2" style="cursor: pointer;"></i></a>
+                            </li>
+                            <li class="footer-list-item"><a href="mailto: cskh.MKstorevn@gmail.com" class="d-flex align-items-center gap-1">
+                                <i class="fas fa-envelope fs-2"></i>
+                                <span>Email: cskh.MKstorevn@gmail.com</span>
+                            </a></li>
+                            <li class="footer-list-item"><a href="#" class="d-flex align-items-center gap-1">
+                                <i class="fas fa-map-marker-alt fs-3"></i>
+                                <span>Address: 780 Pham Hung, ward 4, district 8, Ho Chi Minh city</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    <div class="col col-lg-3 col-md-6">
+                        <ul class="footer-list p-0">
+                            <li class="footer-list-item"><p class="fs-4">REGISTER</p></li>
+                            <li class="footer-list-item">
+                                <div class="form-box">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <input type="tel" placeholder="Tel..." required>
+                                </div>
+                            </li>
+                            <li class="footer-list-item">
+                                <div class="form-box">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </li>
+                            <li class="footer-list-item">
+                                <div class="form-box justify-content-center footer-submit">
+                                    <input type="button" value="SUBMIT">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal fade-in" role="dialog" id="myModalDk">
+        <div class="modal-dialog" style="margin-top: 10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">Đăng Ký</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horicontal" role="form" style="margin-top: 10px;">
+                        <label for="Name" class="control-label col-xs-3">Họ Tên</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Name" class="form-control">
+                            <span class="text-danger" id="tbName">*</span>
+                        </div>
+
+                        <label for="Dn" class="control-label col-xs-3">Tên Đăng Nhập</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Dn" class="form-control">
+                            <span class="text-danger" id="tbDn">*</span>
+                        </div>
+
+                        <label for="Mk" class="control-label col-xs-3">Mật Khẩu</label>
+                        <div class="col-xs-9">
+                            <input type="password" id="Mk" class="form-control">
+                            <span class="text-danger" id="tbMk">*</span>
+                        </div>
+
+                        <label for="reMk" class="control-label col-xs-3">Nhập Lại Mật Khẩu</label>
+                        <div class="col-xs-9">
+                            <input type="password" id="reMk" class="form-control">
+                            <span class="text-danger" id="tbreMk">*</span>
+                        </div>
+
+                        <label for="SDT" class="control-label col-xs-3">Số điện thoại</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="SDT" class="form-control">
+                            <span class="text-danger" id="tbSDT">*</span>
+                        </div>
+
+                        <label for="email" class="control-label col-xs-3">Email</label>
+                        <div class="col-xs-9">
+                            <input type="email" id="email" class="form-control">
+                            <span class="text-danger" id="tbEmail">*</span>
+                        </div>
+
+                        <button class="btn btn-sucess btn-group-justified" id="DkBtn" type="button" style="color: white;background-color: #4d5f91;width: 100%">đăng ký</button>
+
+                        <p class="text-danger m-0">* bạn đã có tài khoản hãy <strong><a href="#" class="text-danger">đăng nhập</a></strong></p>
+
+                        <button class="btn btn-sucess btn-group-justified" id="DnBtn" type="button" style="color: white;background-color: #eb4c4d;width: 100%" data-bs-toggle="modal" data-bs-target="#myModalDn" data-bs-dismiss="modal">đăng nhập</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade-in" role="dialog" id="myModalDn">
+        <div class="modal-dialog" style="margin-top: 10px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="text-left">Đăng Nhập</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horicontal" role="form" style="margin-top: 10px;">
+                        <label for="Dn2" class="control-label col-xs-3">Tên Đăng Nhập</label>
+                        <div class="col-xs-9">
+                            <input type="text" id="Dn2" class="form-control">
+                        </div>
+
+                        <label for="Mk2" class="control-label col-xs-3">Mật Khẩu</label>
+                        <div class="col-xs-9">
+                            <input type="password" id="Mk2" class="form-control">
+                        </div>
+
+                        <br>
+
+                        <button class="btn btn-sucess btn-group-justified" id="Dn2Btn" type="button" style="color: white;background-color: #4d5f91;width: 100%">đăng nhập</button>
+
+                        <span class="text-danger">* bạn chưa có tài khoản hãy <strong><a href="#" class="text-danger">đăng ký</a></strong></span>
+
+                        <button class="btn btn-sucess btn-group-justified" id="Dk2Btn" type="button" style="color: white;background-color: #eb4c4d;width: 100%" data-bs-toggle="modal" data-bs-target="#myModalDk" data-bs-dismiss="modal">đăng ký</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
